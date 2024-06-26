@@ -23,6 +23,7 @@ const ItemList = ({ onSelectItem }) => {
             {items.length > 0 ? (
                 items.map(item => (
                     <div key={item._id}>
+                        <p>ID: {item._id}</p> {/* Display primary key ID */}
                         <h3>{item.name}</h3>
                         <p>{item.description}</p>
                         <p>{item.mobileNumber}</p>
